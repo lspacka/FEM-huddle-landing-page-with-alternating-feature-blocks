@@ -22,5 +22,5 @@ Users should be able to:
 
 ### Author
 
-- [Frontend Mentor]()
-- [Twitter]()
+- [Frontend Mentor](https://www.frontendmentor.io/profile/lspacka)
+- [Twatter](https://x.com/lspacka)
