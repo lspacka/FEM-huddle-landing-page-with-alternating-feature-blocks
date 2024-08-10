@@ -19,3 +19,8 @@ Users should be able to:
 
 - HTML
 - CSS
+
+### Author
+
+- [Frontend Mentor]()
+- [Twitter]()
