@@ -124,13 +124,52 @@ button {
 
 .card {
   display: flex;
+  /* justify-content: space-evenly; */
   background-color: white;
   border-radius: 10px;
   border: solid 1px red;
+  padding: 3rem 1rem 2rem 4rem;
+  /* gap: 14rem; */
+  min-height: 300px;
+  /* width: 90%; */
+  /* place-self: center; */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-top: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-p {
+  color: hsl(208, 11%, 55%);
+  font-size: 0.98rem;
+  padding-right: 10rem;
+  /* width: 400px; */
+}
+
+.card-img {
+  /* max-inline-size: 30%; */
+  width: 800px;
+  height: 300px;
+  /* place-self: end; */
 }
 
 .grow {
   margin-top: 6rem;
+}
+
+.flowing {
+  flex-direction: row-reverse;
+  gap: 10rem;
+}
+
+.flowing > .card-text {
+  justify-self: end;
+}
+
+.flowing-p {
+  padding: 0;
 }
 
 .ready-card {
@@ -148,10 +187,6 @@ button {
 
 .ready-card > button {
   place-self: center;
-}
-
-.card-img {
-  max-inline-size: 25%;
 }
 
 /* .btn-try {
@@ -321,14 +356,14 @@ footer {
 
   .heading-p {
     font-size: 0.83rem;
-    padding: 0 1.5rem 2rem 1.5rem;
+    padding: 0 0 2rem 0;
   }
 
   .btn-started {
     width: 240px;
     height: 40px;
     font-size: 0.66rem;
-    margin-bottom: 4rem;
+    /* margin-bottom: 3rem; */
   }
   .mockups-img {
     max-inline-size: 100%;
@@ -337,7 +372,21 @@ footer {
   .cards {
     padding: 0 1rem 1rem 1rem;
   }
+  .card {
+    flex-direction: column-reverse;
+    min-height: 0;
+  }
+  /* .card-img {
+    order: 1;
+  }
+  .card-title{
+    order: 2
+  }
+  .card-p {
+    order: 3;
+  } */
   .ready-card {
+    display: flex;
     max-width: 100vw;
     font-size: 0.7rem;
     padding: 4rem 2rem 2.5rem 2rem; 
