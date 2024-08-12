@@ -24,3 +24,5 @@ Users should be able to:
 
 - [Frontend Mentor](https://www.frontendmentor.io/profile/lspacka)
 - [Twatter](https://x.com/lspacka)
+
+Social media icons by [Stockio](https://www.flaticon.com/authors/stockio)

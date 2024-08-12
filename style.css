@@ -46,11 +46,17 @@ button {
 
 .btn-try {
   width: 160px;
-  height: 35px;
+  height: 40px;
   border-radius: 50px;
   border: 0;
   font-family: poppins;
   background-color: white;
+  box-shadow: 0 1px 10px 1px hsl(0, 0%, 0%, 5%);
+}
+
+.btn-try:hover {
+  cursor: pointer;
+  color: hsl(208, 11%, 55%);
 }
 
 .heading-container {
@@ -61,37 +67,24 @@ button {
   background-repeat: no-repeat;
 }
 
-/* .header,
 .heading {
-  background-color: transparent;
-} */
-
-.heading {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr; */
   display: flex;
   flex-direction: row;
   font-family: poppins;
-  /* border: solid 1px red; */
   padding-top: 3rem;
 }
 
 .heading-desc {
   padding: 5.1rem 0 0 0;
-  /* no overflow: */
-  /* padding: 3.3rem 0 0 0; */
 }
 
 .heading-h3 {
   font-size: 1.5rem;
   font-weight: 600;
   padding-bottom: 2rem;
-  /* padding-right: 6rem;  */
 }
 
 .heading-p {
-  /* font-size: 0.94rem; */
   font-size: 0.9rem;
   padding: 0 9rem 2rem 0;
 }
@@ -102,7 +95,17 @@ button {
   border-radius: 50px;
   border: none;
   background-color: hsl(322, 100%, 66%);
+  box-shadow: 0 5px 10px hsl(0, 0%, 0%, 15%);
   color: white;
+}
+
+.btn-started:hover {
+  cursor: pointer;
+  background-color: hsl(322, 100%, 76%);
+}
+
+.first {
+  width: 270px;
 }
 
 .mockups-img {
@@ -127,12 +130,11 @@ button {
   /* justify-content: space-evenly; */
   background-color: white;
   border-radius: 10px;
-  border: solid 1px red;
+  /* border: solid 1px red; */
   padding: 3rem 1rem 2rem 4rem;
   /* gap: 14rem; */
   min-height: 300px;
-  /* width: 90%; */
-  /* place-self: center; */
+  box-shadow: 0 0 10px hsl(0, 0%, 0%, 5%);
 }
 
 .card-title {
@@ -173,16 +175,22 @@ button {
 }
 
 .ready-card {
-  border: solid 1px orange;
-  width: fit-content;
+  min-height: 0;         /* min-height all things! */
   place-self: center;
-  z-index: 1;
+  /* z-index: 1; */
   transform: translateY(5.5rem);
+  /* padding: 4rem 6rem 2.5rem 6rem;  */
   padding: 4rem 6rem 2.5rem 6rem; 
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.second {
+  width: 340px;
+  height: 60px;
+  font-size: 0.9rem;
 }
 
 .ready-card > button {
@@ -365,6 +373,7 @@ footer {
     font-size: 0.66rem;
     /* margin-bottom: 3rem; */
   }
+
   .mockups-img {
     max-inline-size: 100%;
     transform: translateX(3px);
