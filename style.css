@@ -1,5 +1,5 @@
 /* TODO:
-    - reorganize footer links
+    + reorganize footer links
     + shadow boxes
 */
 
@@ -7,7 +7,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  min-width: 0;
 }
 
 html {
@@ -17,7 +16,6 @@ html {
 }
 
 body {
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -26,20 +24,12 @@ button {
   font-weight: 700;
 }
 
-.container {
-  /* display: grid;
-  grid-template-rows: 2fr 3fr 1fr; */
-  max-width: 100vw;
-  /* padding-right: 8rem; */
-}
-
 .header {
   display: flex;
   justify-content: space-between;
 }
 
 .huddle-logo {
-  /* max-inline-size: 20%; */
   width: 170px;
   height: 25px;
 }
@@ -109,12 +99,8 @@ button {
 }
 
 .mockups-img {
-  /* max-inline-size: 135%;
-  transform: translateX(-150px); */
   max-inline-size: 119%;
   transform: translateX(-85px);
-  /* no overflow: */
-  /* max-inline-size: 100%; */
 }
 
 .cards {
@@ -122,17 +108,13 @@ button {
   flex-direction: column;
   padding: 0 4rem 1rem 4rem;
   gap: 1.5rem;
-  /* border: solid 1px red; */
 }
 
 .card {
   display: flex;
-  /* justify-content: space-evenly; */
   background-color: white;
   border-radius: 10px;
-  /* border: solid 1px red; */
   padding: 3rem 1rem 2rem 4rem;
-  /* gap: 14rem; */
   min-height: 300px;
   box-shadow: 0 0 10px hsl(0, 0%, 0%, 5%);
 }
@@ -147,14 +129,11 @@ button {
   color: hsl(208, 11%, 55%);
   font-size: 0.98rem;
   padding-right: 10rem;
-  /* width: 400px; */
 }
 
 .card-img {
-  /* max-inline-size: 30%; */
   width: 800px;
   height: 300px;
-  /* place-self: end; */
 }
 
 .grow {
@@ -177,11 +156,8 @@ button {
 .ready-card {
   min-height: 0;         /* min-height all things! */
   place-self: center;
-  /* z-index: 1; */
   transform: translateY(5.5rem);
-  /* padding: 4rem 6rem 2.5rem 6rem;  */
   padding: 4rem 6rem 2.5rem 6rem; 
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -197,10 +173,6 @@ button {
   place-self: center;
 }
 
-/* .btn-try {
-  justify-self: end;
-} */
-
 footer {
   background-color: hsl(192, 100%, 9%);
   color: white;
@@ -209,15 +181,9 @@ footer {
 }
 
 .footer-container {
-  /* width: auto; */
   display: grid;
-  /* grid-template-columns: 0.43fr 0.3fr; */
   grid-template-columns: 2fr 2fr;
-
-  /* font-size: 0.75rem; */
   line-height: 1.3rem;
-  /* grid-template-rows: repeat(6, 0.5fr); */
-  /* column-gap: 4rem; */
 }
 
 .contact-info {
@@ -240,7 +206,6 @@ footer {
 
 .contact-text {
   text-align: start;
-  /* margin-left: 0.5rem; */
 }
 
 .location-span {
@@ -257,10 +222,6 @@ footer {
 }
 
 .links {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 0.7rem; */
   display: flex;
   column-gap: 7rem; 
 }
@@ -281,10 +242,6 @@ footer {
   text-decoration: underline;
 }
 
-/* .socials {
-  grid-column: 3;
-} */
-
 .social-link {
   width: 10px;
 }
@@ -303,21 +260,11 @@ footer {
   margin-bottom: 2rem;
 }
 
-/* .socials {
-  grid-column: 3;
-  grid-row: 1;
-} */
-
 .socials {
-  /* width: fit-content; */
-  /* display: inline-block; */
   display: grid;
   grid-template-columns: repeat(3, 0.2fr);
   grid-column: 3;
   grid-row: 1;
-  /* column-gap: 1rem; */
-  /* display: flex;
-  gap: 1rem; */
 }
 
 .social-link {
@@ -334,7 +281,7 @@ footer {
     hue-rotate(294deg) 
     brightness(101%) 
     contrast(100%);
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 500px) {
@@ -361,7 +308,6 @@ footer {
     font-size: 1.4rem;
     padding-bottom: 1rem;
   }
-
   .heading-p {
     font-size: 0.83rem;
     padding: 0 0 2rem 0;
@@ -381,8 +327,7 @@ footer {
   }
   .card:not(.ready-card) {
     flex-direction: column-reverse;
-    /* min-height: 0; */
-    padding: 4rem 2rem 2rem 2.5rem;
+    padding: 4rem 2rem 2rem 2rem;
     text-align: center;
   }
   .card-img {
@@ -394,7 +339,6 @@ footer {
   }
   .card-p {
     padding: 0;
-    /* font-size: 0.95rem; */
     font-size:  0.9rem;
   }
   .flowing {
@@ -402,9 +346,7 @@ footer {
   }
   .ready-card {
     display: flex;
-    /* max-width: 100vw; */
     font-size: 0.7rem;
-    /* padding: 4rem 2rem 2.5rem 2rem;  */
     padding: 3rem 2rem 2rem 2rem;
   }
   .second {
@@ -431,10 +373,6 @@ footer {
     column-gap: 1rem;
   }
   .links {
-    /* grid-row: 3;
-    grid-column: 1;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr); */
     flex-direction: column;
     row-gap: 0.7rem;
   }
@@ -449,9 +387,5 @@ footer {
     grid-row: 5;
     transform: translateY(-25px);
     text-align: center;
-    /* place-self: center; */
   }
-  /* .socials {
-    place-self: center;
-  } */
 }
